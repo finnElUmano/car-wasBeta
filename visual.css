@@ -1,0 +1,106 @@
+
+    
+body{
+    min-height: 100vh;
+    background-image: url(images/prueba.jpg); /*coloncando imagen*/
+    background-repeat: no-repeat;  /*para que no se repita*/
+    background-size: cover; /*para que cubra todo*/
+    background-position: center;    
+    background-attachment: fixed; /*para que se muestre la imagen en todo el fondo(-CuandoSeaseScrolLaImagenSeQuedaFija-)*/
+    margin: 0px;
+
+
+}
+
+body:before {    /*degradado*/
+    content: "";
+    width: 70% ;   /*modifiacar ancho(margenes)*/
+    min-height: 65vh;  /*me modifico el tamaño largo (margenes)*/
+    position: absolute;
+    top: 0;
+    left: 20%;  /* margen izquierda */
+
+
+    background: linear-gradient(45deg,rgb(51, 198, 243),white); /*degradado*/
+    opacity: 0.3;   /*cotrolar la opacidad*/
+    border: 2px solid white;
+    margin: 90px;
+    margin-block-start: 170px;    /*margen arriba*/
+
+    
+}
+
+
+h1{
+    font-family: sans-serif;
+    text-align: center;
+    border: 2px solid blue; /*margen*/
+    display: block;
+    padding: 10px;  /*Espaciado interno*/
+}
+.cabeza {
+    color: white;  /*Canbiar el color de las letras(fuentes)*/
+    background: rgba(162, 155, 254,1.0);  /*fondo del texto*/
+    font-family: cursive; /*tipos de fuentes*/
+    text-align: center;
+    margin: auto;
+    width: 300px;
+}
+
+h4 {
+    padding: auto;
+    border: 2px solid blueviolet;
+}
+
+.menu1 {
+    color: white;
+    text-align: left;
+    background-color: #ccc;
+    margin: 50px;
+    width: 280px; /*para el ancho*/
+    margin-bottom: 50px; /*marjen debajo*/
+    margin-block-start: 50px; /*margen arriba*/
+
+}
+
+.exterior {
+    padding: 0px;
+    border: 2px solid blueviolet;
+}
+
+.menu1 li {   /*seleccionando nada mas el elemento (li)*/
+    color: rgb(12, 68, 173);
+    padding: 1px;
+    border: 2px solid white;  /*estoy utilizando como marjen*/
+    margin: 10px;
+    margin-left: -10px;
+    display: block;  /*Elimina los puntos por defecto*/
+
+}
+
+
+.menu2 {
+    color: white;
+    text-align: left;
+    background: #ccc;                                                                           
+    margin: 50px;
+    width: 280px;
+}
+.interior {
+    padding: 0px;
+    border: 2px solid blueviolet;
+}
+                                         
+.menu2 li {
+    color: rgb(12, 68, 173);
+    padding: 1px;
+    border: 2px solid white;
+    margin: 10px; /*margen derecha*/
+    margin-left: -10px;
+    display: block;
+
+}
+
+
+
+
