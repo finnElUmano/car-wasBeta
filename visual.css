@@ -2,7 +2,7 @@
     
 body{
     min-height: 100vh;
-    background-image: url(images/prueba.jpg); /*coloncando imagen*/
+    background-image: url(images/car1.jpg); /*coloncando imagen*/
     background-repeat: no-repeat;  /*para que no se repita*/
     background-size: cover; /*para que cubra todo*/
     background-position: center;    
