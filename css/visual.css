@@ -1,0 +1,82 @@
+
+    
+    body {
+    min-height: ;
+    background-image: url(images/car2.jpg); /*coloncando imagen*/
+    background-repeat: no-repeat;  /*para que no se repita*/
+    background-size: cover; /*para que cubra todo*/
+    background-position: center;    
+    background-attachment: fixed; /*para que se muestre la imagen en todo el fondo(-CuandoSeaseScrolLaImagenSeQuedaFija-)*/
+    background-color: gray;
+    margin: 0px;
+
+    width: 100%;
+}
+
+
+
+.logo {   /*logo and slogan*/
+    color: white;  /*Canbiar el color de las letras(fuentes)*/
+    font-family: cursive; /*tipos de fuentes*/
+    text-align: center;
+    border: 2px solid black;
+    width: 200px;  /*ancho*/
+    
+        /*margenes*/
+    margin-left: 400px;
+    margin-top: 50px;
+
+}
+
+.lavado,h5 {    /*slogan*/
+    
+    border: 2px solid blueviolet;
+    width: 150px;
+    margin-left: 20px;
+}
+
+/*
+.menu1 {
+    margin-top: -10px;
+}
+*/
+
+.menu1, .menu2 {
+    color: white;
+    text-align: left;   /*formato de letra*/
+    border: 2px solid white;
+    width: 280px; /*para el ancho*/
+        /*margenes*/
+    
+    margin-left: 25px;  /*margen izquierdo*/
+    margin-bottom: 10px; /*marjen debajo*/ 
+}
+
+.exterior, .interior {  /*cuadro d´items*/
+    padding: 0px;    /*ESPACIO INTERNO*/
+    border: 2px solid blueviolet;
+    background-color: #ccc;   /*Fondo*/
+    /* margin-block-start: -25px;    ceparacion del titulo (mmargen de arriba)    */
+    margin-top: -10%;
+
+}
+
+.menu1 li, .menu2 li {   /*items*/
+    background: whitesmoke;
+    color: rgb(12, 68, 173);
+    padding: 3px;   /*ESPACIO INTERNO*/
+    border: 2px solid pink;  /*estoy utilizando como marjen*/
+    margin: 5px;
+    margin-left: 3px; 
+    margin-right: 40%;
+    display: block;  /*ELIMINA LOS PUNTOS POR DEFECTO*/
+
+}
+
+
+.foster, .a {
+    
+    color: white;
+    border: 2px solid white;
+    
+}
