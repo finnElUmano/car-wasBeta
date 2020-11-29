@@ -1,61 +1,67 @@
-
-    
-    body {
-    min-height: ;
-    background-image: url(images/car2.jpg); /*coloncando imagen*/
-    background-repeat: no-repeat;  /*para que no se repita*/
-    background-size: cover; /*para que cubra todo*/
-    background-position: center;    
-    background-attachment: fixed; /*para que se muestre la imagen en todo el fondo(-CuandoSeaseScrolLaImagenSeQuedaFija-)*/
-    background-color: gray;
+*{
     margin: 0px;
-
+    padding: 0px;
+}
+    
+body {
+    margin: 0px;
+    background-image: url("/images/car1.jpg");
+    background-color: gray;
+    background-size: cover;
     width: 100%;
+        
 }
 
 
 
-.logo {   /*logo and slogan*/
+.logo {   
     color: white;  /*Canbiar el color de las letras(fuentes)*/
     font-family: cursive; /*tipos de fuentes*/
     text-align: center;
-    border: 2px solid black;
-    width: 200px;  /*ancho*/
+    border: 2px solid #eee;
+    width: 50%; /*ancho*/
     
-        /*margenes*/
-    margin-left: 400px;
-    margin-top: 50px;
+    margin: 25px 100px 25px 300px;
 
 }
 
-.lavado,h5 {    /*slogan*/
-    
-    border: 2px solid blueviolet;
-    width: 150px;
-    margin-left: 20px;
-}
-
-/*
-.menu1 {
-    margin-top: -10px;
-}
-*/
-
-.menu1, .menu2 {
+.menus {
     color: white;
     text-align: left;   /*formato de letra*/
     border: 2px solid white;
     width: 280px; /*para el ancho*/
         /*margenes*/
-    
+    margin-top: 50px;
     margin-left: 25px;  /*margen izquierdo*/
-    margin-bottom: 10px; /*marjen debajo*/ 
+    margin-bottom: 25px; /*marjen debajo*/ 
+    padding: 10px;
 }
+
+.menu1 {
+    border: solid 2px #eee;
+    padding:10px 5px 10px 5px ;
+    margin-bottom: 10px;
+    
+}
+
+.menu2 {
+    border: solid 2px #eee;
+    padding:10px 5px 10px 5px ;
+    
+}
+
+.menu1 h1, .menu2 h1 {
+    font-size: 25px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+
 
 .exterior, .interior {  /*cuadro d´items*/
     padding: 0px;    /*ESPACIO INTERNO*/
     border: 2px solid blueviolet;
-    background-color: #ccc;   /*Fondo*/
+    background-color: blue;   /*Fondo*/
     /* margin-block-start: -25px;    ceparacion del titulo (mmargen de arriba)    */
     margin-top: -10%;
 
