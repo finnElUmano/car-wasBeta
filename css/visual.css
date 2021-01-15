@@ -1,25 +1,28 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
     
 body {
-    margin: 0px;
+   
     background-image: url("/images/car1.jpg");
-    background-color: gray;
+    background-color: gray;   
     background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
+    font-family: 'Quicksand', sans-serif;
         
 }
 
 
 
-.logo {   
+.logotipo {   
     color: white;  /*Canbiar el color de las letras(fuentes)*/
     font-family: cursive; /*tipos de fuentes*/
     text-align: center;
     border: 2px solid #eee;
-    width: 50%; /*ancho*/
+    width: 40%; /*ancho*/
     
     margin: 25px 100px 25px 300px;
 
@@ -35,6 +38,15 @@ body {
     margin-left: 25px;  /*margen izquierdo*/
     margin-bottom: 25px; /*marjen debajo*/ 
     padding: 10px;
+}
+
+.contact {
+    border: 5px solid blue;
+    width: 300px;
+    height: 375px;
+    background-color: chocolate;
+    float: right;
+    margin: -409px 15px 50px 0px;
 }
 
 .menu1 {
@@ -79,10 +91,66 @@ body {
 
 }
 
+.content {
+    max-width: 400px;
+    max-height: 300px;
+    float: right;
+    margin-top: -550px;
+    margin-right: 0px;
+    padding: 1.5em;
+    color: whitesmoke;
+}
 
-.foster, .a {
+.logo{
+    text-align: center;
+    font-size: 25px;
+}
+
+.logo span {
+    color: #b70e21;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+   
+    max-width: 400px;
+    max-height: 700px;
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background: #222222;
+}
+
+.contact-form form {
+    margin: 0;
+    padding: 2em;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 5px;
+    background: none;
+    border: none;
+    outline: 0;
+    color: #ffffff;
+    border-bottom: 2px solid #d63031;
+}
+
+
+.contact-info {
+    background: black;
+}
+
+.foster {
     
     color: white;
     border: 2px solid white;
     
 }
+
