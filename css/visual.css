@@ -1,124 +1,136 @@
 *{
+    box-sizing: border-box; 
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-}
     
-body {
-   
-    background-image: url("");
-    background-color: blue;   
-    background-size: cover;
+}
+
+/*
+    .img {
+    margin: 0;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
     background-repeat: no-repeat;
-    width: 100%;
-    font-family: 'Quicksand', sans-serif;
-        
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
+*/
 
+html {
+    margin: 0;
+    font-size: 62.5%; /*para tener el control de "rem =10px"*/
+    font-family: 'Quicksand', sans-serif;    
+    border: 5px solid greenyellow;
+}
 
-.logotipo {   
-    color: white;  /*Canbiar el color de las letras(fuentes)*/
-    font-family: cursive; /*tipos de fuentes*/
+body {
+    background-color: gray;
+    margin: 0;
+    min-height: 100vh;
+    min-width: 320px;
+    background-image: url("/images/car-test2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main {
+    font-size: 18px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+header div > h2 {   
+    color: lavenderblush;
+    font-size: 1.7rem;
     text-align: center;
-    border: 2px solid #eee;
-    width: 40%; /*ancho*/
-    
-    margin: 25px 100px 25px 300px;
-
+    border: 5px solid whitesmoke;
+    margin: 0 auto;
+    width: 80%; /*ancho*/
+    padding: 3px;
 }
+
 
 .menus {
+    
     color: white;
     text-align: left;   /*formato de letra*/
-    border: 2px solid white;
-    width: 280px; /*para el ancho*/
-        /*margenes*/
-    margin-top: 50px;
-    margin-left: 25px;  /*margen izquierdo*/
-    margin-bottom: 25px; /*marjen debajo*/ 
-    padding: 10px;
+    border: 3px solid red;
+    width: 100%; /*para el ancho*/ 
+    height: 100%;
+    padding: 0.5rem;
+    display: grid;
 }
 
-.contact {
-    border: 5px solid blue;
-    width: 300px;
-    height: 375px;
-    background-color: chocolate;
-    float: right;
-    margin: -409px 15px 50px 0px;
-}
 
 .menu1 {
-    border: solid 2px #eee;
-    padding:10px 5px 10px 5px ;
-    margin-bottom: 10px;
-    
+    border: 2px solid greenyellow;
+    padding: 3px;    
+    max-height: 160px;
+    max-width: 200px;
 }
 
 .menu2 {
-    border: solid 2px #eee;
-    padding:10px 5px 10px 5px ;
-    
+    border: 2px solid greenyellow;
+    padding: 0px 3px;       
+    max-height: 160px;
+    max-width: 200px;
 }
 
-.menu1 h1, .menu2 h1 {
-    font-size: 25px;
-    padding: 15px;
-    margin-bottom: 10px;
+/*titulos exterior - interior*/
+.titles {
+    font-size: 2rem;
+    padding: 0;
+    margin-bottom: 5px;
+    border: solid 2px #eee; 
 }
 
-
-
-.exterior, .interior {  /*cuadro d´items*/
-    padding: 0px;    /*ESPACIO INTERNO*/
-    border: 2px solid blueviolet;
-    background-color: blue;   /*Fondo*/
-    /* margin-block-start: -25px;    ceparacion del titulo (mmargen de arriba)    */
-    margin-top: -10%;
-
+/* listas ul */
+.exterior, .interior {
+    padding: 0; 
+    border: 2px solid pink;
+    width: 100%;
+    margin-bottom:3px;
 }
 
-.menu1 li, .menu2 li {   /*items*/
-    background: whitesmoke;
-    color: rgb(12, 68, 173);
-    padding: 3px;   /*ESPACIO INTERNO*/
-    border: 2px solid pink;  /*estoy utilizando como marjen*/
+.menu1 li, .menu2 li {
+    font-size: 1.2rem;
+    padding: 5px 5px; 
+    border: 2px solid yellow; 
     margin: 5px;
-    margin-left: 3px; 
-    margin-right: 40%;
-    display: block;  /*ELIMINA LOS PUNTOS POR DEFECTO*/
-
+    list-style: none;
 }
 
-.content {
-    max-width: 400px;
-    max-height: 300px;
-    float: right;
-    margin-top: -550px;
-    margin-right: 0px;
-    padding: 1.5em;
+.centro {
+    width: 100%;
+    height: 100%;
+    border: 3px solid blue;
+         
+}
+
+.formulario {     
+    padding: 0.1em;
     color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    min-width: 210px;
+    min-height: 320px;
 }
 
-.logo{
-    text-align: center;
-    font-size: 25px;
-}
-
-.logo span {
-    color: #b70e21;
-}
 
 .contact-wrapper {
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
-   
-    max-width: 400px;
-    max-height: 700px;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3); 
 }
 
 .contact-wrapper > * {
-    padding: 1em;
+    padding: 0.5em;
 }
 
 .contact-form {
@@ -134,7 +146,7 @@ body {
 .contact-form form input,
 .contact-form form textarea {
     width: 100%;
-    padding: 5px;
+    padding: 3px;
     background: none;
     border: none;
     outline: 0;
@@ -142,15 +154,12 @@ body {
     border-bottom: 2px solid #d63031;
 }
 
-
 .contact-info {
     background: black;
 }
 
-.foster {
-    
+footer {    
     color: white;
     border: 2px solid white;
-    
 }
 
