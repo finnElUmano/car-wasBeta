@@ -22,17 +22,17 @@
 */
 
 html {
-    margin: 0;
     font-size: 62.5%; /*para tener el control de "rem =10px"*/
     font-family: 'Quicksand', sans-serif;    
     border: 5px solid greenyellow;
+    width: 100%;
+    height: 100%;
 }
 
 body {
     background-color: gray;
-    margin: 0;
     min-height: 100vh;
-    min-width: 320px;
+    min-width: 100%;
     background-image: url("/images/car-test2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,9 +42,9 @@ body {
 
 main {
     font-size: 18px;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 header div > h2 {   
@@ -52,21 +52,22 @@ header div > h2 {
     font-size: 1.7rem;
     text-align: center;
     border: 5px solid whitesmoke;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 80%; /*ancho*/
     padding: 3px;
 }
 
 
 .menus {
-    
+    width: 300px;
+    height: 310px;
     color: white;
     text-align: left;   /*formato de letra*/
     border: 3px solid red;
-    width: 100%; /*para el ancho*/ 
-    height: 100%;
     padding: 0.5rem;
-    display: grid;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -74,14 +75,14 @@ header div > h2 {
     border: 2px solid greenyellow;
     padding: 3px;    
     max-height: 160px;
-    max-width: 200px;
+    max-width: 300px;
 }
 
 .menu2 {
     border: 2px solid greenyellow;
     padding: 0px 3px;       
     max-height: 160px;
-    max-width: 200px;
+    max-width: 300px;
 }
 
 /*titulos exterior - interior*/
@@ -109,19 +110,26 @@ header div > h2 {
 }
 
 .centro {
-    width: 100%;
-    height: 100%;
+    color: white;
+    max-width: 300px;
+    max-height: 310px;
     border: 3px solid blue;
+    margin-left: auto;
+    margin-right: auto;
          
 }
 
-.formulario {     
+.formulario {
+    font-size: 1.2rem;     
     padding: 0.1em;
     color: whitesmoke;
-    width: 100%;
+    max-width: 600px;
+    max-height:420px;
     height: 100%;
     min-width: 210px;
-    min-height: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 
@@ -131,17 +139,26 @@ header div > h2 {
 
 .contact-wrapper > * {
     padding: 0.5em;
+
 }
 
 .contact-form {
     background: #222222;
 }
-
-.contact-form form {
-    margin: 0;
-    padding: 2em;
+.contact-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact-form form .block {
+    grid-column: 1 / 3;
 }
 
+/* inputs */
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+/* selct inputs */
 .contact-form form button,
 .contact-form form input,
 .contact-form form textarea {
@@ -153,13 +170,58 @@ header div > h2 {
     color: #ffffff;
     border-bottom: 2px solid #d63031;
 }
+.contact-form form button {
+    background: chocolate;
+    text-transform: uppercase;
+    border: 0;
+    color: black; 
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #d63031;
+    color: whitesmoke;
+    transition: background-color 1.5s ease-out;
+    outline: 0;
+}
 
 .contact-info {
-    background: black;
+    background:#000;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    padding: .2rem;
+
 }
 
 footer {    
     color: white;
     border: 2px solid white;
-}
+    width: 90%;
+    margin: .5rem auto .5rem auto;
 
+}   
+/* LARGE SCREEN */
+@media (min-width:700px;) {
+    body{
+        padding: 0 4rem; 
+    }
+
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+}
