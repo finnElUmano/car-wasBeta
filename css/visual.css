@@ -3,65 +3,34 @@
     margin: 0px;
     padding: 0px;
 }    
-
-body {
+html {
     font-family: 'Quicksand', sans-serif;
     font-size: 62.5%; /*para tener el control de "rem =10px"*/
     background-color: gray;
-    min-height: 100vh;
-    min-width: 100%;
-    background-image: url("/images/car-test2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
-
-main {
-    font-size: 18px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-header div > h2 {   
+header {
+    width: 100%;
+    min-height: 40px;   
     color: lavenderblush;
-    font-size: 1.7rem;
-    text-align: center;
     border: 5px solid whitesmoke;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%; /*ancho*/
     padding: 3px;
 }
-
-
-.menus {
-    width: 300px;
-    height: 310px;
-    color: white;
-    text-align: left;   /*formato de letra*/
-    border: 3px solid red;
-    padding: 0.5rem;
-    margin-left: auto;
-    margin-right: auto;
+header h2 {
+    text-align: center;
+    font-size: 1.8rem;
 }
-
-
 .menu1 {
     border: 2px solid greenyellow;
     padding: 3px;    
     max-height: 160px;
     max-width: 300px;
 }
-
 .menu2 {
     border: 2px solid greenyellow;
     padding: 0px 3px;       
     max-height: 160px;
     max-width: 300px;
 }
-
 /*titulos exterior - interior*/
 .titles {
     font-size: 2rem;
@@ -69,7 +38,6 @@ header div > h2 {
     margin-bottom: 5px;
     border: solid 2px #eee; 
 }
-
 /* listas ul */
 .exterior, .interior {
     padding: 0; 
@@ -77,7 +45,6 @@ header div > h2 {
     width: 100%;
     margin-bottom:3px;
 }
-
 .menu1 li, .menu2 li {
     font-size: 1.2rem;
     padding: 5px 5px; 
@@ -85,17 +52,7 @@ header div > h2 {
     margin: 5px;
     list-style: none;
 }
-
-.centro {
-    color: white;
-    max-width: 300px;
-    max-height: 310px;
-    border: 3px solid blue;
-    margin-left: auto;
-    margin-right: auto;
-         
-}
-
+/*INDICE DEL FORMULARIO*/
 .formulario {
     font-size: 1.2rem;     
     padding: 0.1em;
@@ -108,17 +65,13 @@ header div > h2 {
     margin-right: auto;
     
 }
-
-
 .contact-wrapper {
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3); 
 }
-
 .contact-wrapper > * {
     padding: 0.5em;
 
 }
-
 .contact-form {
     background: #222222;
 }
@@ -129,7 +82,6 @@ header div > h2 {
 .contact-form form .block {
     grid-column: 1 / 3;
 }
-
 /* inputs */
 .contact-form form p {
     margin: 0;
@@ -177,12 +129,10 @@ header div > h2 {
     list-style: none;
     padding: 0;
 }
-
 .contact-info ul li {
     padding: .2rem;
 
 }
-
 footer {    
     color: white;
     border: 2px solid white;
