@@ -4,13 +4,16 @@
     padding: 0px;
 }    
 html {
+    width: 100%;
+    height: 100%;
     font-family: 'Quicksand', sans-serif;
     font-size: 62.5%; /*para tener el control de "rem =10px"*/
     background-color: gray;
 }
 header {
-    width: 100%;
-    min-height: 40px;   
+    width: 80%;
+    min-height: 40px;
+    margin: 0 auto; 
     color: lavenderblush;
     border: 5px solid whitesmoke;
     padding: 3px;
@@ -19,17 +22,27 @@ header h2 {
     text-align: center;
     font-size: 1.8rem;
 }
+.menus-container {
+    max-width: 320px;
+    min-width: 300px;
+    min-height: auto;
+    margin: 0 auto;
+    padding: 5px;
+}
 .menu1 {
+    width: 310px;
+    height: auto;
     border: 2px solid greenyellow;
-    padding: 3px;    
-    max-height: 160px;
-    max-width: 300px;
+    padding: 3px;
+    margin: 5px 5px;    
+
 }
 .menu2 {
+    width: 100%;
+    height: 100%;
     border: 2px solid greenyellow;
-    padding: 0px 3px;       
-    max-height: 160px;
-    max-width: 300px;
+    padding: 5px;
+    margin: 5px 5px;      
 }
 /*titulos exterior - interior*/
 .titles {
@@ -53,26 +66,19 @@ header h2 {
     list-style: none;
 }
 /*INDICE DEL FORMULARIO*/
-.formulario {
-    font-size: 1.2rem;     
-    padding: 0.1em;
-    color: whitesmoke;
-    max-width: 600px;
-    max-height:420px;
-    height: 100%;
-    min-width: 210px;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
 .contact-wrapper {
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3); 
+    max-width: 400px;
+    min-width: 300px;
+    min-height: 415px;
+    margin: 3px auto;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    color: whitesmoke;
 }
 .contact-wrapper > * {
     padding: 0.5em;
-
 }
 .contact-form {
+    width: 100%;
     background: #222222;
 }
 .contact-form form{
@@ -105,7 +111,6 @@ header h2 {
     border: 0;
     color: black; 
 }
-
 .contact-form form button:hover,
 .contact-form form button:focus {
     background: #d63031;
@@ -113,25 +118,22 @@ header h2 {
     transition: background-color 1.5s ease-out;
     outline: 0;
 }
-
 .contact-info {
+    min-width: 300px;
     background:#000;
 }
-
 .contact-info h4,
 .contact-info ul,
 .contact-info p {
     text-align: center;
     margin: 0 0 1rem 0;
 }
-
 .contact-info ul {
     list-style: none;
     padding: 0;
 }
 .contact-info ul li {
     padding: .2rem;
-
 }
 footer {    
     color: white;
