@@ -1,0 +1,25 @@
+//variables
+$color-principal: #d63031;
+$color-secundario: chocolate;
+$color-claro: #fff;
+$color-back: #222222;
+$color-back2: #000;
+$gradiente: linear-gradient(to left, $color-principal, $color-back2 50% );
+
+
+*{
+  box-sizing: border-box; 
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Quicksand', sans-serif;
+//  font-size: 62.5%;
+}    
+body {
+  padding: 5px;
+
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5px 15px;
+}

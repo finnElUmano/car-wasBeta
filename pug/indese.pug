@@ -1,0 +1,62 @@
+mixin inputs (lbType,titulo, inType, inName)
+  p
+    label(for=""+lbType)=titulo
+    input(type=""+inType, name=""+inName)
+//- ////////////////////////////////////////////////////////
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    <script src="https://kit.fontawesome.com/00a2b18fdc.js" crossorigin="anonymous"></script>
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet")
+    link(rel="stylesheet", href="../css/style.css")
+    title Car Wash.! 
+  body 
+    picture
+      img(src="../images/car/car_3.jpg", alt="Es un automovil" )
+    header
+      div: h2 Car Wash "la confianza lo es todo"
+      nav
+        a: i
+        a: i
+        a: i
+    main
+      section.menus-container
+        .menu1
+          h1
+          ul.exterior
+            li Lavado Simple 
+            li Pulido de Cristales
+            li Pulido de Carroceria
+        .menu2
+          h1
+          ul.interior
+            li Aspirado Completo
+            li Limpieza de Tapizeria
+            li Limpieza de Acientos
+      .contact-wrapper
+        .contact-form
+          h2 Contact 
+            span Us
+          form 
+            +inputs("fullname", "Full name", "text", "fullname" )
+            +inputs("email", "Email adress", "email","email" )
+            +inputs("tel", "Phone", "tel", "phone" )
+            +inputs("affair", "Direccion", "text", "affair")
+            p.block
+              label(for="message")
+              textarea(name="messeage", rows="3") 
+            p.block: button(type="submit")
+        .contact-info
+          h4 More info
+          ul
+            li: i(class="fas fa-map-marker-alt") Baker Street
+            li: i(class="fas fa-phone") 111 000 111
+            li: i(class="fas fa-envelope-open-text") ejemplo134@gmail.com
+          p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique quod distinctio neque possimus voluptate nobis magnam explicabo illum exercitationem 
+          p carwash.com
+    footer
+      p Car Wash la confianda lo es todo.
